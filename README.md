@@ -37,7 +37,7 @@ The project’s main database structure, shown below, consists of fourteen table
 - **13. FACT_THONGTINCHUYENBAY – Tracks operational flight data (crew IDs, time, empty seats, crew flight hours) for performance and resource management**
 - **14. FACT_TIEPTHI – Records promotional program participation (customer, campaign, points earned/redeemed, flight, date) for evaluating marketing effectiveness**
 
-[Entity Relationship Diagram here]
+![alt text](https://github.com/FishCake9918/MDX_query/blob/main/ConstellationSchema.jpg)
 
 
 
@@ -45,79 +45,65 @@ The project’s main database structure, shown below, consists of fourteen table
 
 ### Overview of Findings
 
-Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
-
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
-
+The project’s analysis uncovered three major trends across sales, operations, and marketing. Online ticket sales remain the dominant revenue channel but have shown notable declines in recent years, suggesting the need for stronger digital engagement strategies. Operationally, promotion readiness among first officers varies significantly, highlighting opportunities to optimize crew training and career progression planning. From a marketing perspective, high-performing seasonal promotions—especially those with strong point-redemption rates—should be maintained or expanded, while underperforming campaigns require strategic adjustments to improve customer participation.
 
 
 # Insights Deep Dive
-### Category 1:
+### Ticket Sales Channels:
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Online channels lead but are declining** – Platforms like Agoda, Traveloka, and the Vietnam Airlines app still produce more total revenue than offline channels but have seen sharp drops (e.g., Traveloka -60%, Agoda -32%, VN Airlines App -27%).
   
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Offline channels show selective growth** – Certain agencies, such as BenThanh Tourist (+32%) and Fiditour Q5 (+213%), recorded significant revenue gains, though their total sales remain lower than major online platforms.
   
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Customer behavior may be shifting** – Declines in online revenue and growth in some offline sales suggest changes in customer trust, pricing perception, or promotional appeal.
   
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Opportunity to revitalize online sales** The higher revenue base of online channels means targeted improvements in digital pricing, promotions, and user experience could yield substantial gains.
 
-[Visualization specific to category 1]
+<img width="887" height="476" alt="image" src="https://github.com/user-attachments/assets/c72e9147-dd5e-47a9-83f2-70f90de0ea70" />
 
 
-### Category 2:
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+### Pilot Promotion Criteria:
+
+* **Experience and flight-hour requirements vary widely** – Some first officers meet both the 1,500+ flight-hour requirement and the minimum 3 years of continuous service, while others fall short due to gaps in flying or insufficient total hours.
   
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Consistency matters as much as totals** – Officers with high total hours but missing a full year of activity (e.g., no flights in 2022) do not meet promotion eligibility, highlighting the importance of steady operational engagement.
   
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Aircraft-specific experience is critical** – Performance and eligibility are evaluated not only on total flight hours but also on experience with specific aircraft types, aligning promotions with operational needs.
   
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Data-driven career planning opportunity** – Tracking hours and service continuity can help forecast promotion readiness, enabling more proactive training schedules and succession planning for captains.
 
-[Visualization specific to category 2]
+<img width="726" height="554" alt="image" src="https://github.com/user-attachments/assets/49e32f73-1624-48a1-b442-3403d9a458cc" />
 
 
-### Category 3:
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+### Promotional Program Effectiveness:
+
+* **High-performing seasonal campaigns** – Certain summer–autumn promotions, such as Thu An Lành and Mùa thu lãng mạn, achieved strong engagement with redemption rates around 80% and acceptable male participation (~61%), making them prime candidates for continuation.
   
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Low-redemption programs underperform** – Campaigns with redemption rates below 60% and limited operational history (e.g., launched only in 2024) showed weak customer response and may not warrant further investment.
   
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Gender participation patterns** – Male participation rates varied across campaigns, suggesting opportunities to tailor promotional benefits or marketing channels to better engage specific customer segments.
   
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Points-based incentive success** – Programs with competitive discount rates and easy point redemption attracted higher usage, indicating that simple, valuable rewards drive better customer action.
 
-[Visualization specific to category 3]
+<img width="560" height="569" alt="image" src="https://github.com/user-attachments/assets/e85cee2a-79bb-4cc7-9458-ca99f2353533" />
 
 
-### Category 4:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 4]
 
 
 
 # Recommendations:
 
-Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+Based on the insights and findings above, we would recommend the Vietnam Airlines to consider the following: 
 
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* Strengthen online sales channels with competitive pricing, seasonal offers, and enhanced booking experiences.**
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* Support and expand high-performing offline agencies while addressing underperformers.**
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* Use data-driven tracking to plan pilot promotions, ensuring flight-hour and experience requirements are met.**
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* Continue top-performing seasonal promotions and redesign or retire low-impact campaigns.**
   
 
 
@@ -125,8 +111,8 @@ Based on the insights and findings above, we would recommend the [stakeholder te
 
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
-* Assumption 1 (ex: missing country records were for customers based in the US, and were re-coded to be US citizens)
+* AI-generated dataset – All data is synthetic and does not reflect real Vietnam Airlines operations; patterns and insights are illustrative only.
   
-* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
+* Analysis was limited to the years 2022–2024, assuming stable market conditions and no major external disruptions.
   
-* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)
+* Criteria such as pilot promotion requirements were applied uniformly, without exceptions for special cases (e.g., medical leave, training programs).
