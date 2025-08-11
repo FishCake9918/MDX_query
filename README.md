@@ -1,33 +1,41 @@
-Welcome to the sample GitHub ReadME! Use this template as an outline for your data analytics projects. Include one ReadME per repository, with each repository storing one project. Remember, it's better to have quality over quantity - having 2 stellar business-relevant projects stands out much more than 3+ mediocre projects. Feel free to make a copy of this or fork this repository and make it your own. Happy portfolio-ing :) 
-
-
-
-
 # Project Background
-Backround about the company, including the industry, active years, business model, and key business metrics. Explain this from the POV of a data analyst who is working at the company.
+This project simulates the design and implementation of a data warehouse and analytical system for an airline, using “Vietnam Airlines” as a sample case to illustrate concepts and workflows.
+
+# Disclaimer
+The dataset used in this project is entirely AI-generated for educational purposes. It does not represent real operational data, and the airline name mentioned is used solely as an example with no affiliation to any actual organisation.
 
 Insights and recommendations are provided on the following key areas:
 
-- **Category 1:** 
-- **Category 2:** 
-- **Category 3:** 
-- **Category 4:** 
+- **Ticket Sales Channels** – Evaluating whether to strengthen online or offline sales channels, based on revenue performance trends. 
+- **Pilot Promotion Criteria** – Assessing first officers’ flight hours and experience to determine readiness for promotion to captain.
+- **Promotional Program Effectiveness** – Identifying which marketing campaigns deliver the highest engagement and redemption rates, and deciding which to maintain or discontinue. 
 
-The SQL queries used to inspect and clean the data for this analysis can be found here [link].
+The SQL queries used to create database [[Script tạo bảng](https://drive.google.com/file/d/15KicsoV0SDTyikhozqTAB5s99DEjXTME/view?usp=sharing)].
 
-Targed SQL queries regarding various business questions can be found here [link].
+The SQL script used to input dataset [[Dataset](https://docs.google.com/document/d/16_3nBjaKs0Zl643NxnR0GFST8JymyoI-YpiAaZyBSzA/edit?usp=drive_link)]
 
-An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
+Targed SQL queries regarding 3 said areas can be found here [[Query](https://drive.google.com/drive/folders/1WQlT06JSSg16G7Wn6KvbS4cXoTANoHoD?usp=drive_link)].
 
+An interactive PowerBI dashboard used to report and explore sales trends can be found here [[Dasboard](https://drive.google.com/file/d/1gWuM41bohYrEFAVXJesJ_5BffaxDSNOI/view?usp=sharing)].
 
 
 # Data Structure & Initial Checks
 
-The companies main database structure as seen below consists of four tables: table1, table2, table3, table4, with a total row count of X records. A description of each table is as follows:
-- **Table 2:**
-- **Table 3:**
-- **Table 4:**
-- **Table 5:**
+The project’s main database structure, shown below, consists of fourteen tables: DIM_THOIGIAN, DIM_KENHBANVE, DIM_TACVU, DIM_PHIHANHDOAN, DIM_KHACHHANG, DIM_MAYBAY, DIM_SANBAY, DIM_TUYENBAY, DIM_KHUYENMAI, DIM_CHUYENBAY, FACT_DATCHO, FACT_CSKH, FACT_THONGTINCHUYENBAY, and FACT_TIEPTHI. A description of each table is as follows:
+- **1. DIM_THOIGIAN – Contains date-related attributes from 2022 to 2024 (day, week, month, quarter, year) to enable time-based analysis**
+- **2. DIM_KENHBANVE – Stores ticket sales channels and fare classes (e.g., website, app, agents; Economy, Business, First Class) for tracking sales performance by channel and fare type**
+- **3. DIM_TACVU – Lists task categories and details for customer service or operational support activities**
+- **4. DIM_PHIHANHDOAN – Holds crew member information (name, gender, role, start date, address, birth date, phone number) for managing and analyzing flight crew performance and promotions**
+- **5. DIM_KHACHHANG – Stores passenger details (ID, name, gender, nationality, birth date, contact info) for customer analysis**
+- **6. DIM_MAYBAY – Records aircraft details (type, manufacturer, seating capacity) to plan fleet utilization and route assignments**
+- **7. DIM_SANBAY – Contains airport information (code, name, city, country) for route and network analysis**
+- **8. DIM_TUYENBAY – Defines flight routes (origin–destination) for analyzing route performance**
+- **9. DIM_KHUYENMAI – Stores promotional campaign details (name, discount rate, points required, start/end dates) for marketing analysis**
+- **10. DIM_CHUYENBAY – Contains individual flight details (flight code, aircraft, route, origin/destination airports) for scheduling and performance tracking**
+- **11. FACT_DATCHO – Records booking transactions (customer, channel, flight, date, seat, fare, discount, final price) for sales and revenue analysis**
+- **12. FACT_CSKH – Logs customer service interactions (customer, flight, date, channel, task, staff member, priority level) for service performance evaluation**
+- **13. FACT_THONGTINCHUYENBAY – Tracks operational flight data (crew IDs, time, empty seats, crew flight hours) for performance and resource management**
+- **14. FACT_TIEPTHI – Records promotional program participation (customer, campaign, points earned/redeemed, flight, date) for evaluating marketing effectiveness**
 
 [Entity Relationship Diagram here]
 
